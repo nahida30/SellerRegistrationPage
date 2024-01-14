@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <!-- previous links  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+      
+
+    <!-- CDN of Tailwind and DaisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</head>
+<body>
+    <div class="navbar bg-white">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+           
+          </div>
+          <a class="btn btn-ghost text-xl">LOGO</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          
+        </div>
+        <div class="navbar-end">
+          <a href="/login.html" class="btn">Button</a>
+        </div>
+      </div>
+
+    <div class="hero min-h-screen mt-[-0.5rem] md:min-h-[50vh] md:mt-[-1rem] lg:min-h-[50vh] lg:mt-[-1.5rem]" style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/025/343/032/small/orange-gradient-mesh-color-background-for-graphic-design-element-vector.jpg);">
+        
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md lg:max-w-[48rem]">
+            <h1 class="mb-5 text-5xl font-bold text-white">Unlock Your Success with <span class="text-orange-800">Website</span>  - Start Selling in Just 5 Minutes!</h1>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mt-20">
+        <h1 class="md:text-center lg:px-20 font-medium text-5xl mb-4">Follow Simple Steps to Start Selling</h1>
+        
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 lg:px-40">
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./Images/address.png" alt="Shoes" class="rounded-xl " />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-3xl">Profile</h2>
+                  <p class="text-xl">Complete your profile by providing your email and store name so that we can identify you</p>
+                  
+                </div>
+              </div>
+              <div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./Images/address.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-3xl">Add Address</h2>
+                  <p class="text-xl">Provide us your full address including Division,District,Upazila,Area </p>
+                  
+                </div>
+              </div>
+              <div class="card  bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./Images/verify.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-3xl">Verify</h2>
+                  <p class="text-xl">Add in your NID number & Birth Certificate number for more information</p>
+                  
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./Images/upload (2).png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-3xl">Submit</h2>
+                  <p class="text-xl">Submit all your details, and feel free to update the provided information if necessary.</p>
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container ">
+          
+          <h1 class="mr-[83rem] text-3xl w-[22rem] font-medium   lg:text-center lg:mx-auto lg:text-5xl lg:font-medium lg:mb-10 lg:mt-20 lg:w-full">Signup Form</h1>
+          <div class="px-48 lg:px-[27rem]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
+            <div class="step ml-[-43rem] md:ml-[-10rem] lg:ml-[-192px]">
+              <p>Profile</p>
+              <div class="bullet">
+                <span>1</span>
+              </div>
+              <div class="check fas fa-check"></div>
+            </div>
+            <div class="step ml-[-43rem] md:ml-0 lg:ml-[-84px]">
+              <p class="ml-14 lg:ml-0">Add Address</p>
+              <div class="bullet">
+                <span>2</span>
+              </div>
+              <div class="check fas fa-check"></div>
+            </div>
+            <div class="ml-[-43rem] md:ml-[-4.5rem] step lg:ml-[24px]">
+              <p>Verify</p>
+              <div class="bullet">
+                <span>3</span>
+              </div>
+              <div class="check fas fa-check"></div>
+            </div>
+            <div class="ml-[-43rem] md:ml-8 step lg:ml-[133px]">
+              <p>Submit</p>
+              <div class="bullet">
+                <span>✔️</span>
+              </div>
+              <div class="check fas fa-check"></div>
+            </div>
+           
+          </div>
+          
+          <div class="form-outer">
+            <form action="#">
+              <div class="page slide-page ">
+                <div class="lg:mx-72">
+                  <div class="title">Profile</div>
+               <div class="flex-row lg:flex gap-3">
+                
+                <div>
+                  <div class="label font-normal text-2xl">Seller Name</div>
+                  <input id="sellerName" type="text" required class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                </div>
+                <div>
+                  <div class="label font-normal text-2xl">Phone Number(Seller)</div>
+                  <input id="sellerPhoneNumber" type="number" required class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                </div>
+               </div>
+          
+               <div class="flex-row lg:flex gap-3">
+                <div>
+                  <div class="label font-normal text-2xl">Shop Name</div>
+                  <input id="shopName" type="text" required  class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                </div>
+                <div>
+                  <div class="label font-normal text-2xl">Phone Number(Shop)</div>
+                  <input id="shopPhoneNumber" type="number" required  class="input input-bordered input-warning w-[21rem] md:ml-0 md:w-full ml-[-68rem] lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                </div>
+               </div>
+          
+               <div class="flex-row lg:flex gap-3">
+                <div>
+                  <div class="label font-normal text-2xl">Email Address</div>
+                  <input id="email" type="email" required  class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                </div>
+                <div>
+                  <div class="label font-normal text-2xl">Password</div>
+                  <input id="password" type="password" required class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0" />
+                  <p id="passwordMessage" style="color: red;"></p>
+                </div>
+               </div>
+               <div>
+                <div>
+                  <div class="label font-normal text-2xl">Confirm Password</div>
+                  <input id="confirmPassword" type="password" required class="input input-bordered input-warning w-[21rem] ml-[-68rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0 lg:mr-[31rem]" />
+                  <p id="confirmPasswordMessage" style="color: red;"></p>
+                </div>
+                
+               </div>
+             
+              
+              <!-- <div class="field">
+                <button id="nextButton" class="firstNext next " disabled >Next</button>
+                
+              </div> -->
+              <div>
+                <button id="nextButton" class="firstNext next btn btn-warning ml-[-68rem] mt-2 md:w-full md:ml-[0rem] lg:w-56 lg:cursor-pointer lg:mt-5 lg:ml-0" disabled>Next</button>
+              </div>
+                </div>
+              </div>
+    
+              <div class="page slide-page mb-[-500px] lg:mb-0">
+                <div class="lg:mx-72">
+                  <div class="title mb-10">Add Address</div>
+                <div class="grid grid-cols-1 gap-3 w-[320px]  md:gap-3 lg:grid-cols-5 lg:gap-20 lg:w-[1000px] mb-10">
+                  <div>
+                    <select id="selectDivision" required class="select select-warning w-full  lg:w-[180px] lg:max-w-[350px] text-xl">
+                      <option disabled selected>Division</option>
+                      <option>Dhaka</option>
+                      <option>Chattogram</option>
+                      <option>Barishal</option>
+                      <option>Rajshahi</option>
+                      <option>Khulna</option>
+                      <option>Rangpur</option>
+                      <option>Mymensingh</option>
+                      <option>Sylhet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select id="selectDistrict" required class="select select-warning w-full lg:w-[180px] lg:max-w-[350px] text-xl">
+                      <option  disabled selected>Districts</option>
+                      <option>Dhaka</option>
+                      <option>Chattogram</option>
+                      <option>Barishal</option>
+                      <option>Rajshahi</option>
+                      <option>Khulna</option>
+                      <option>Rangpur</option>
+                      <option>Mymensingh</option>
+                      <option>Sylhet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select id="selectUpazila" required class="select select-warning w-full lg:w-[180px] lg:max-w-[350px] text-xl">
+                      <option  disabled selected>Upazila</option>
+                      <option>Dhaka</option>
+                      <option>Chattogram</option>
+                      <option>Barishal</option>
+                      <option>Rajshahi</option>
+                      <option>Khulna</option>
+                      <option>Rangpur</option>
+                      <option>Mymensingh</option>
+                      <option>Sylhet</option>
+                    </select>
+                  </div>
+                  <div>
+                  
+                  <input id="zip" required placeholder="Zip" type="number" class="input input-bordered input-warning w-full lg:w-[180px] lg:max-w-[350px] text-xl text-black" />
+                  </div>
+                  
+                </div>
+                <div>
+                  <div class="label font-normal text-2xl">Shop Address</div>
+                  <textarea id="shopAddress" required class="textarea textarea-warning w-[300px] ml-[-70rem] md:w-full md:ml-[-0rem] lg:w-[500px] lg:ml-[-370px]"></textarea>
+                  <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                </div>
+           
+                  <div class=" btns mt-5  ml-[-68rem] mt-2 md:ml-0 lg:ml-0 lg:mt-0">
+                    <button class="prev-1 prev btn btn-warning lg:w-56 cursor-pointer mt-5">Previous</button>
+                    <!-- <button class="prev-1 prev">Previous</button> -->
+                    <button id="nextButton1" class="next-1 next btn btn-warning lg:w-56 cursor-pointer mt-5" disabled>Next</button>
+                    <!-- <button class="next-1 next">Next</button> -->
+                  </div>
+                  
+                
+                </div>
+              </div>
+    
+              <div class="page slide-page mb-96">
+               <div class="lg:mx-72">
+                <div class="title">Verify</div>
+               <div class="grid lg:grid-cols-2">
+               
+                <div class="form-control flex items-center justify-center w-[336px] lg:w-[400px] lg:h-72 mt-5">
+                  <div class="label lg:ml-[-15.75rem] font-normal text-2xl">NID Number</div>
+                  <label aria-required="true" id="nidNumber" for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                      <div class="flex flex-col items-center justify-center p-5">
+                          <svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                          </svg>
+                          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                          <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                      </div>
+                      <input id="dropzone-file" type="file"  />
+                  </label>
+              </div> 
+    
+              <div class="form-control flex items-center justify-center w-[336px] lg:w-[400px] lg:h-72 mt-5">
+                <div class="label lg:ml-[-12.75rem] font-normal text-2xl">Birth Certificate</div>
+                <label aria-required="true" id="birthCertificate" for="dropzone-file-birth" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <div class="flex flex-col items-center justify-center p-5">
+                        <svg class="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="dropzone-file-birth" type="file" />
+                </label>
+            </div> 
+               </div>
+              
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 ">
+                  <div>
+                    <div id="nid" required class="label font-normal text-2xl ">NID Number</div>
+                    <input type="number" class="input input-bordered input-warning w-[20rem] ml-[-66rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0 mr-10" />
+                  </div>
+                  <div>
+                    <div id="certificate" required class="label font-normal text-2xl">Birth Certificate</div>
+                    <input type="number" class="input input-bordered input-warning  w-[20rem] ml-[-66rem] md:ml-0 md:w-full lg:w-[400px] lg:max-w-xl lg:ml-0 mr-10" />
+                  </div>
+                 </div>
+                <div class=" btns mt-5 mb-10 ml-[-68rem] mt-2 md:ml-0 lg:ml-0 lg:mt-0">
+                  <button class="prev-2 prev btn btn-warning lg:w-56 cursor-pointer mt-5">Previous</button>
+                  <button id="submit1" class="submit btn btn-warning lg:w-56 cursor-pointer mt-5" >Submit</button>
+                  <!-- <button class="submit">Submit</button> -->
+                </div>
+               </div>
+              </div>
+    
+              <!-- <div class="page">
+                <div class="title">Login Details:</div>
+                <div class="field">
+                  <div class="label">Username</div>
+                  <input type="text">
+                </div>
+                <div class="field">
+                  <div class="label">Password</div>
+                  <input type="password">
+                </div>
+                <div class="field btns">
+                  <button class="prev-3 prev">Previous</button>
+                  <button class="submit">Submit</button>
+                </div>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+  
+      
+ 
+    
+<div class="lg:px-20 mb-10">
+    <h1 class="text-3xl px-10 -mt-96  font-medium text-center lg:text-5xl lg:font-medium mb-5 lg:-mt-96">Frequently Asked Questions</h1>
+    <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-orange-100 dark:bg-gray-800 text-orange-600 dark:text-white">
+        <h2 id="accordion-color-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-800 dark:border-gray-700 dark:text-gray-400 hover:bg-orange-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+            <span class="text-start md:text-xl lg:text-2xl text-orange-500">Who can become a seller on our platform?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-black dark:text-gray-400 text-xl lg:text-2xl">Any individual or business with products or services that align with our platform's guidelines can become a seller. Ensure you review our terms and conditions for eligibility.</p>
+            
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-2">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-800 dark:border-gray-700 dark:text-gray-400 hover:bg-orange-100 dark:hover:bg-gray-800 gap-3"data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+            <span class="text-start text-xl lg:text-2xl text-orange-500">How do I start the registration process?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-black dark:text-gray-400 text-xl lg:text-2xl">Complete the process of providing information in your profile, including your address. Additionally, provide details from your National ID (NID) and Birth Certificate.</p>
+           
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-3">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-800 dark:border-gray-700 dark:text-gray-400 hover:bg-orange-100 dark:hover:bg-gray-800 gap-3"data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+            <span class="text-start text-xl lg:text-2xl text-orange-500"> How can I track my sales and performance?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-black dark:text-gray-400 text-xl lg:text-2xl">The seller dashboard provides real-time analytics, sales reports, and other performance metrics. Familiarize yourself with the dashboard for insights into your business.</p>
+            
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-4">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 dark:focus:ring-orange-800 dark:border-gray-700 dark:text-gray-400 hover:bg-orange-100 dark:hover:bg-gray-800 gap-3"data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+              <span class="text-start text-xl lg:text-2xl text-orange-500"> How long does it take to get approved as a seller? </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-black dark:text-gray-400 text-xl lg:text-2xl">Approval times vary but typically take a few minutes. Ensure all provided information is accurate to expedite the process. </p>
+              
+            </div>
+          </div>
+      </div>
+</div>
+  
+  
+   
+
+
+<div class="lg:px-20 mb-10">
+  <div class="hero md:min-h-screen lg:min-h-[70vh]" style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/025/343/032/small/orange-gradient-mesh-color-background-for-graphic-design-element-vector.jpg);">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <div class="lg:text-left lg:w-full">
+        
+        <p class="py-6 text-4xl w-80 md:text-3xl lg:text-5xl font-bold text-white lg:mx-14 lg:w-full">Learn About <span class="text-orange-800">Website</span> <span>Seller</span><br> Sign Up</p>
+        <p class="text-4xl -mx-10 md:text-3xl lg:text-5xl font-bold text-white md:-mx-10 lg:mx-0"><span class="invisible md:visible lg:visible">←</span> Watch Here</p>
+      </div>
+      
+  
+<video class="md:h-96 lg:h-96 rounded-lg" controls>
+  <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  
+    </div>
+  </div>
+</div>
+     
+
+
+
+
+    
+    
+       
+     
+
+
+
+    
+    
+      <!-- ============================== Footer design Start hear ==================================== -->
+      <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+          <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        </aside> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+<!-- ============================== Footer design end here ==================================== -->
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.fa-check:before{
+    display: none;
+}
+
+::selection{
+  color: #fff;
+  background: #ff8500;
+}
+.container{
+  width: 1500px;
+  /* background: #fff; */
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #ff8500;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+
+
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 134px;
+  /* margin: 40px 398px; */
+  user-select: none;
+}
+
+
+.container  .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container  .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+ .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: -26px;
+}
+ .step .bullet.active{
+  border-color: #ff8500;
+  background: #ff8500;
+}
+ .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ .step .bullet.active span{
+  display: none;
+}
+ .step .bullet:before,
+.step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -232px;
+  height: 3px;
+  width: 224px;
+  background: #262626;
+  
+}
+ .step .bullet.active:after{
+  background: #ff8500;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+ .step:last-child .bullet:before,
+ .step:last-child .bullet:after{
+  display: none;
+}
+
+
+ .step p.active{
+  color: #ff8500;
+  transition: 0.2s linear;
+}
+ .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+ .step .check.active{
+  display: block;
+  color: #fff;
+}
+
+    /* ======================== search suggestion style start here  ======================= */
+  .nav-tabs .nav-link{
+    border: none;
+    color: #1e1b1b;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .nav-tabs .nav-link.active {
+        border-bottom: 3px solid #1e1b1b !important;
+        background: none !important;
+        color: #1e1b1b !important;
+}
+.menu-bar .menu-content .logo-2 {
+padding: 5px 0;
+}
+.menu-bar .menu-content .attr-nav button:hover {
+background: #e47702;
+}
+.menu-bar .menu-content .attr-nav button {
+transition: 0.5s;
+position: absolute;
+right: 0;
+top: 0;
+height: 50px;
+width: 110px;
+background: #ff8500;
+color: #fff;
+border-radius: 30px;
+border: none;
+font-weight: 800;
+}
+.menu-bar .menu-content input {
+border: none;
+box-shadow: inherit;
+border-radius: 30px;
+padding-left: 20px;
+height: 50px;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.menu-bar .menu-content form {
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+position: relative;
+margin: 20px 0;
+min-width: 250px;
+border-radius: 30px;
+}
+
+.menu-bar .menu-content .attr-nav {
+width: 390px;
+}
+.menu-bar .menu-content .full-logo a img {
+width: 150px;
+}
+.menu-bar .menu-content ul {
+margin-bottom: 0;
+}
+.menu-bar .menu-content .our-menu li a i {
+font-size: 20px;
+margin-right: 5px;
+}
+.menu-bar .menu-content .our-menu li a:hover {
+background: rgba(20, 19, 19, 0.496);
+color: #fff;
+
+}
+.menu-bar .menu-content .our-menu li {
+margin-right: 5px;
+}
+.menu-bar .menu-content .our-menu li a {
+padding: 5px 10px;
+text-decoration: none;
+font-size: 18px;
+color: rgb(13, 13, 13);
+font-weight: 600;
+transition: 0.5s;
+border-radius: 5px;
+}
+.menu-bar .menu-content .our-menu li .cart-icon:hover{
+background: none;
+color: #071125;
+}
+.menu-bar .menu-content .our-menu li span{
+color: #fff;
+padding: 3px 5px;
+font-size: 12px;
+border-radius: 100%;
+background: #ff8500;
+position: relative;
+left: -12px;
+top: -10px;
+}
+
+.menu-bar .menu-content .our-menu {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu-bar .menu-content {
+display: flex;
+justify-content: space-between;
+}
+.menu-bar {
+background: #fff;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+position: fixed;
+top: -34px;
+width: 100%;
+z-index: 100;
+}
+
+.menu-bar .custom-select {
+position: relative;
+}
+
+.custom-select select {
+display: none;
+}
+.menu-bar .menu-content .select-selected {
+background-color: rgba(31, 33, 34, 0.519) !important;
+color: #fff;
+}
+
+.menu-bar .menu-content .select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+.menu-bar .menu-content .select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+
+.menu-bar .menu-content .select-items div,
+.select-selected {
+color: #ffffff;
+padding: 5px 27px 5px 8px;
+cursor: pointer;
+user-select: none;
+border-radius: 5px;
+}
+
+.menu-bar .menu-content .select-items {
+position: absolute;
+background-color: rgba(0, 0, 0, 0.408);
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+width: 180px;
+border-radius: 5px;
+}
+
+.menu-bar .menu-content .select-hide {
+display: none;
+}
+.menu-bar .menu-content .select-items div:hover,
+.same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ============== menu bar style end hear ==================== */
+    .account-log-banner{
+        margin-top: 80px;
+        overflow: hidden;
+    }
+   /* ============================================== SellerAcount.html  all css start hear ========================================== */
+   .add-address-address .select-div button{
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        background: #ff8500;
+        font-weight: 600;
+        color: #fff;
+    }
+    .add-address-address .select-div
+        .sort-by-div{
+        margin-bottom: 20px;
+        }
+        .add-address-address .select-div
+        .sort-by-div
+        .custom-select {
+        position: relative;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        select {
+        display: none;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-selected {
+            background: #fff;
+            height: 40px;
+            font-size: 18px;
+            padding-left: 10px;
+    
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #ff8500 transparent transparent transparent;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-selected.select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-items
+        div,
+    .select-selected {
+        padding: 5px 27px 5px 8px;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 5px;
+        color: #1e1b1b;
+    }
+    
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-items {
+        position: absolute;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        width: 180px;
+        border-radius: 5px;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-hide {
+        display: none;
+    }
+    .add-address-address .select-div
+        .sort-by-div
+        .custom-select
+        .select-items
+        div:hover,
+    .same-as-selected {
+        color: #ff8500;
+        background: rgb(241, 248, 218);
+
+    }
+    .add-address-address .select-div{
+        background: #f0eeee;
+        padding: 40px;
+        border-radius: 10px;
+    }
+   /* ====================================================== */
+   li{
+list-style: none;
+}
+.add-address-tab
+.sort-by-div
+.custom-select {
+position: relative;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+select {
+display: none;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected {
+    background: #fff;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #ff8500 transparent transparent transparent;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items
+div,
+.select-selected {
+padding: 5px 27px 5px 8px;
+cursor: pointer;
+user-select: none;
+border-radius: 5px;
+color: #1e1b1b;
+}
+
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items {
+position: absolute;
+background-color: #fff;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+width: 180px;
+border-radius: 5px;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-hide {
+display: none;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items
+div:hover,
+.same-as-selected {
+color: #ff8500;
+background: rgb(241, 248, 218);
+
+}
+/* ============================================== SellerAcount.html  all css start hear ========================================== */
+.add-address-tab
+.sort-by-div
+.custom-select {
+position: relative;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+select {
+display: none;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected {
+    background: #fff;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #ff8500 transparent transparent transparent;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-selected.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items
+div,
+.select-selected {
+padding: 5px 27px 5px 8px;
+cursor: pointer;
+user-select: none;
+border-radius: 5px;
+color: #1e1b1b;
+}
+
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items {
+position: absolute;
+background-color: #fff;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+width: 180px;
+border-radius: 5px;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-hide {
+display: none;
+}
+.add-address-tab
+.sort-by-div
+.custom-select
+.select-items
+div:hover,
+.same-as-selected {
+color: #ff8500;
+background: rgb(241, 248, 218);
+
+}
+.add-address-address .choose-file img{
+border-style: dashed;
+border-color: rgb(181, 177, 177);
+}
+.add-address-address .choose-file label{
+background: #f29524;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.add-address-address .choose-file{
+background: #f2952460;
+padding: 20px 5px;
+border-radius: 10px;
+}
+.add-address-address .verified-tabb {
+margin-top: 20px;
+}
+.add-address-address .verified-tabb button{
+background: #ff8500;
+border-radius: 5px;
+border: none;
+padding: 10px 50px;
+color: #fff;
+}
+.add-address-address .verified-tabb input{
+height: 45px;
+}
+.add-address-address form .add-address-tab .select-div button{
+background: #ff8500;
+border: none;
+padding: 10px 50px;
+color: #fff;
+margin-top: 20px;
+border-radius: 5px;
+}
+.add-address-address form .add-address-tab .title h3{
+color: #ff8500;
+}
+.add-address-address form .add-address-tab .des-address label{
+color: #1e1b1b;
+}
+.add-address-address form .add-address-tab input{
+  height: 45px;
+}
+.add-address-address form .add-address-tab{
+  margin-top: 20px;
+}
+.add-address-address .pofile-tab{
+  margin-top: 20px;
+}
+.add-address-address .pofile-tab .title h3{
+  color: #ff8500;
+}
+.add-address-address  form .pofile-tab input{
+  height: 45px;
+}
+.add-address-address{
+  padding: 50px 0;           
+}
+.add-address-address form .pofile-tab button:hover{
+  background: #f29524;
+}
+.add-address-address form .pofile-tab button{
+  background: #ff8500;
+  border: none;
+  padding: 10px 50px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+}
+/* ============================================== SellerAcount.html  all css end hear ========================================== */
+/*  ==================================  footer style start hear ================================== */
+footer .grid-item {
+padding: 20px 20px 10px 20px;
+}
+footer .grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+gap: 10px;
+}
+footer .copy-right a {
+color: #fff;
+text-decoration: none;
+}
+footer .footer-bottom i {
+color: #ffffff;
+font-size: 25px;
+}
+footer .footer-bottom-content p {
+color: #ffffff;
+}
+footer .footer-bottom h5 {
+font-size: 22px;
+line-height: 22px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Open Sans";
+}
+footer .footer-bottom .social img {
+width: 50px;
+}
+footer .footer-bottom .pay img {
+width: 100%;
+height: 30px;
+}
+footer .footer-bottom h5 {
+margin-bottom: 20px;
+}
+footer .logo-content {
+display: flex;
+justify-content: center;
+height: 100%;
+flex-direction: column;
+color: #ffffff;
+}
+footer .content ul {
+padding-left: 0;
+}
+footer .content ul li a{
+font-size: 14px;
+line-height: 22px;
+color: #ffffff;
+font-weight: 300;
+font-family: "Roboto";
+text-decoration: none;
+}
+footer .content h5 {
+font-size: 25px;
+line-height: 22px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Roboto";
+}
+
+footer .footer-content {
+padding: 15px 0;
+background: #656844;
+overflow: hidden;
+}
+/*  ==================================  footer style end hear ================================== */
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <script src="assets/js/main.js"></script> -->
+<script>
+    // ===========================  language select end hear ===================================
+		var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          ll = selElmnt.length;
+          /*for each element, create a new DIV that will act as the selected item:*/
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          /*for each element, create a new DIV that will contain the option list:*/
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < ll; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    yl = y.length;
+                    for (k = 0; k < yl; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          /*a function that will close all select boxes in the document,
+          except the current select box:*/
+          var x, y, i, xl, yl, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          xl = x.length;
+          yl = y.length;
+          for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+		// =========================== language select end hear ===================================
+</script>
+<script>
+  function checkForm() {
+    const sellerName = document.getElementById('sellerName').value;
+    const sellerPhoneNumber = document.getElementById('sellerPhoneNumber').value;
+    const shopName = document.getElementById('shopName').value;
+    const shopPhoneNumber = document.getElementById('shopPhoneNumber').value;
+    const email = document.getElementById('email').value;
+    const password= document.getElementById('password').value;
+    const confirmPassword= document.getElementById('confirmPassword').value;
+
+
+    const selectDistrict = document.getElementById('selectDistrict').value;
+    const selectDivision = document.getElementById('selectDivision').value;
+    const selectUpazila = document.getElementById('selectUpazila').value;
+    const zip = document.getElementById('zip').value;
+    const shopAddress = document.getElementById('shopAddress').value;
+
+    // const nidNumber = document.getElementById('nidNumber').value;
+    // const birthCertificate = document.getElementById('birthCertificate').value;
+    // const nid = document.getElementById('nid').value;
+    // const certificate = document.getElementById('certificate').value;
+
+
+
+    // Repeat the same for other input fields
+
+    const nextButton = document.getElementById('nextButton');
+    const nextButton1 = document.getElementById('nextButton1');
+    // const submit1 = document.getElementById('submit1');
+
+  
+
+    // Enable the Next button only if all fields are filled
+    if (
+      sellerName &&
+      sellerPhoneNumber &&
+      shopName &&
+      shopPhoneNumber &&
+      email &&
+      password.length >= 9 &&
+      confirmPassword === password
+    ) {
+      nextButton.disabled = false;
+    } else {
+      nextButton.disabled = true;
+    }
+    if (selectDistrict && selectDivision && selectUpazila && zip && shopAddress) {
+      nextButton1.disabled = false;
+    } else {
+      nextButton1.disabled = true;
+    }
+    if (nidNumber && birthCertificate && nid  && certificate) {
+      submit1.disabled = false;
+    } else {
+      submit1.disabled = true;
+    }
+    
+  }
+  
+
+  // Attach the checkForm function to each input field's onchange event
+  document.getElementById('sellerName').addEventListener('input', checkForm);
+  document.getElementById('sellerPhoneNumber').addEventListener('input', checkForm);
+  document.getElementById('shopName').addEventListener('input', checkForm);
+  document.getElementById('shopPhoneNumber').addEventListener('input', checkForm);
+  document.getElementById('email').addEventListener('input', checkForm);
+  document.getElementById('password').addEventListener('input', checkForm);
+  document.getElementById('confirmPassword').addEventListener('input', checkForm);
+
+  document.getElementById('selectDistrict').addEventListener('input', checkForm);
+  document.getElementById('selectDivision').addEventListener('input', checkForm);
+  document.getElementById('selectUpazila').addEventListener('input', checkForm);
+  document.getElementById('zip').addEventListener('input', checkForm);
+  document.getElementById('shopAddress').addEventListener('input', checkForm);
+
+  // document.getElementById('nidNumber').addEventListener('input', checkForm);
+  // document.getElementById('birthCertificate').addEventListener('input', checkForm);
+  // document.getElementById('nid').addEventListener('input', checkForm);
+  // document.getElementById('certificate').addEventListener('input', checkForm);
+
+
+ 
+
+
+
+
+
+
+
+    const slidePage = document.querySelector(".slide-page");
+const nextBtnFirst = document.querySelector(".firstNext");
+const prevBtnSec = document.querySelector(".prev-1");
+const nextBtnSec = document.querySelector(".next-1");
+const prevBtnThird = document.querySelector(".prev-2");
+const nextBtnThird = document.querySelector(".next-2");
+const prevBtnFourth = document.querySelector(".prev-3");
+const submitBtn = document.querySelector(".submit");
+const progressText = document.querySelectorAll(".step p");
+const progressCheck = document.querySelectorAll(".step .check");
+const bullet = document.querySelectorAll(".step .bullet");
+let current = 1;
+
+nextBtnFirst.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-25%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+nextBtnSec.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-50%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+// nextBtnThird.addEventListener("click", function(event){
+//   event.preventDefault();
+//   slidePage.style.marginLeft = "-75%";
+//   bullet[current - 1].classList.add("active");
+//   progressCheck[current - 1].classList.add("active");
+//   progressText[current - 1].classList.add("active");
+//   current += 1;
+// });
+submitBtn.addEventListener("click", function(){
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+  setTimeout(function(){
+    alert("Your Form Successfully Signed up");
+    location.reload();
+  },800);
+});
+
+prevBtnSec.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "0%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnThird.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-25%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnFourth.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-50%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+
+</script>
+    
+</body>
+</html>
